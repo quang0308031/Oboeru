@@ -1,0 +1,235 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #fff;
+    width: 250px;
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.sidebar .logo h2 {
+    color: #0056a6;
+    font-weight: 700;
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #f0f0f0;
+    color: #0056a6;
+}
+
+/* Main Content Styles */
+.main-content {
+    flex: 1;
+    padding: 40px;
+    background-color: #fafafa;
+    overflow-y: scroll;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.search-bar input {
+    width: 60%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Title and Description Styles */
+h1.title {
+    font-size: 28px; 
+    font-weight: 700; 
+    color: #333; 
+    margin-bottom: 10px; 
+}
+
+p.description {
+    font-size: 16px; 
+    color: #666; 
+    margin-bottom: 20px; 
+}
+
+/* Flashcard Styles */
+.flashcard-group {
+    margin-top: 20px;
+}
+
+.flashcard {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: #f0f0f0;
+    padding: 20px; /* Increased padding for a wider look */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Make flashcards take full available width */
+}
+
+/* Adjusted Card Number */
+.card-number {
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+/* Flashcard Input Styles */
+.flashcard input {
+    flex: 1;
+    margin-right: 10px; /* Space between input and delete button */
+    padding: 12px; /* Adjusted padding for better spacing */
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 0; /* No margin-bottom for inputs in this row */
+}
+
+/* Delete Button Styles */
+.delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #e74c3c;
+    margin-left: 10px; /* Margin left for spacing */
+}
+
+/* Image Upload Styles */
+.image-upload {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.upload-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+/* Add Card Button Styles */
+.add-card {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.add-card-btn {
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px; /* Increased padding for a wider button */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.add-card-btn:hover {
+    background-color: #d5d5d5;
+}
+
+.plus-icon {
+    margin-right: 5px;
+}
+
+/* Create Button Styles */
+.create-button {
+    margin-top: 20px;
+}
+
+.create-set-btn {
+    background-color: #0056a6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px; /* Adjusted padding for a better look */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.create-set-btn:hover {
+    background-color: #004494;
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 20px; /* Space between form groups */
+    display: flex; /* Flexbox for alignment */
+    flex-direction: column; /* Stack label and input vertically */
+}
+
+.form-group label {
+    font-size: 16px; /* Font size for labels */
+    font-weight: 600; /* Bold labels */
+    color: #333; /* Dark gray for labels */
+    margin-bottom: 5px; /* Space below labels */
+}
+
+/* Input Styles */
+input[type="text"], textarea {
+    width: 100%; /* Full width inputs */
+    padding: 12px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 8px; /* Rounded corners for inputs */
+    font-size: 16px; /* Font size for inputs */
+    transition: border-color 0.3s ease; /* Transition for border color */
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #0056a6; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Textarea Specific Styles */
+textarea {
+    height: 100px; /* Fixed height for textarea */
+    resize: none; /* Prevent resizing */
+}
